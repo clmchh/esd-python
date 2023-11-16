@@ -1,8 +1,6 @@
-Python 3.12.0 (v3.12.0:0fb18b02c8, Oct  2 2023, 09:45:56) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
-Type "help", "copyright", "credits" or "license()" for more information.
 #Fonction "multiplie" qui multiplie deux nombres en paramètre par additions successives.
 
-def multiplie (a,b):
+def multiplie (a,b): #multiplication de 2 nombres (a et b) par additions successives
     resultat=0
     for i in range(b):
         resultat+=a
@@ -18,7 +16,7 @@ def multiplie (a,b):
 >>> 
 >>> #Fonction "puissance" qui calcule les puissances par multiplication successives.
 >>> 
->>> def puissance (a,n):#calcul de la puissance d'un nombre par multiplication succ
+>>> def puissance (a,n): #calcul de la puissance d'un nombre par multiplication succ
 ...     resultat=1
 ...     for i in range(n)
 ...     
@@ -39,11 +37,4 @@ SyntaxError: incomplete input
 ...     
 >>> print(resultat)
 16
->>> 
->>> resultat=1
->>> for i in range(10):
-...     resultat*=3
-... 
-...     
->>> print(resultat)
-59049
+
