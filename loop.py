@@ -16,11 +16,6 @@ def multiplie (a,b): #multiplication de 2 nombres (a et b) par additions success
 >>> 
 >>> #Fonction "puissance" qui calcule les puissances par multiplication successives.
 >>> 
->>> def puissance (a,n): #calcul de la puissance d'un nombre par multiplication succ
-...     resultat=1
-...     for i in range(n)
-...     
-SyntaxError: incomplete input
 >>> def puissance (a,n):
 ...     resultat=1
 ...     for i in range(n):
@@ -37,4 +32,3 @@ SyntaxError: incomplete input
 ...     
 >>> print(resultat)
 16
-
