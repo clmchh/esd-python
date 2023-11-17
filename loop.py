@@ -33,36 +33,22 @@ SyntaxError: incomplete input
 >>> print(resultat)
 16
 
-# Demande à l'utilisateur un nombre entier N
-n = int(input("Entrez un nombre entier N : "))
 
-# Initialise la somme à 0
+# Demande à l'utilisateur un nombre entier N
+n = int(input("Choisissez un nombre entier N : "))
+
+# Initialisation de la somme à 0
 somme = 0
 
-# Boucle sur les nombres de 1 à N
+# Boucle "for" sur les nombres de 1 à N
 for i in range(1, n + 1):
-    # Ajoute le nombre courant à la somme
     somme += i
 
 # Affiche la somme
 print("La somme des nombres de 1 à N est", somme)
 
-# Demande à l'utilisateur un nombre entier N
-n = int(input("Entrez un nombre entier N : "))
+#Exemple : 
 
-# Initialise la somme à 0
-somme = 0
-
-# Boucle sur les nombres de 1 à N
-for i in range(1, n + 1):
-    # Ajoute le nombre courant à la somme
-    somme += i
-
-# Affiche la somme
-print("La somme des nombres de 1 à N est", somme)
-
-Python 3.12.0 (v3.12.0:0fb18b02c8, Oct  2 2023, 09:45:56) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
-Type "help", "copyright", "credits" or "license()" for more information.
 n=int(input("Choisissez un nombre entier N:"))
 Choisissez un nombre entier N:5
 somme=0
@@ -72,3 +58,51 @@ for i in range (1,n+1):
     
 print("La somme des nombre de 1 à N correspond à",somme)
 La somme des nombre de 1 à N correspond à 15
+
+
+# Demande à l'utilisateur un nombre entier N
+n = int(input("Choisissez un nombre entier N : "))
+
+# Affiche la table de multiplication de N avec une boucle "for"
+for i in range(1, 11):
+    print(f"{n} x {i} = {n * i}")
+
+#Exemple : 
+n=int(input("Choisissez un nombre entier N:"))
+Choisissez un nombre entier N:4
+for i in range(1,11):
+    print(f"{n} x {i} = {n * i}")
+
+    
+4 x 1 = 4
+4 x 2 = 8
+4 x 3 = 12
+4 x 4 = 16
+4 x 5 = 20
+4 x 6 = 24
+4 x 7 = 28
+4 x 8 = 32
+4 x 9 = 36
+4 x 10 = 40
+
+
+# Affiche les nombres de 1 à 10 et indique si chaque nombre est pair ou impair
+for i in range(1, 11):
+    # Indique si le nombre est pair
+    if i % 2 == 0:
+        print(f"{i} est pair")
+    # Indique si le nombre est impair
+    else:
+        print(f"{i} est impair")
+        
+1 est impair
+2 est pair
+3 est impair
+4 est pair
+5 est impair
+6 est pair
+7 est impair
+8 est pair
+9 est impair
+10 est pair
+
