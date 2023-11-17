@@ -1,3 +1,5 @@
+A FAIRE : TOUT METTRE SOUS FORME DE FONCTION....
+
 #Fonction "multiplie" qui multiplie deux nombres en paramètre par additions successives.
 
 def multiplie (a,b): #multiplication de 2 nombres (a et b) par additions successives
@@ -133,4 +135,32 @@ for i in range (1,n+1):
 print(f"La factorielle de N est, {factorielle}")
 La factorielle de N est, 3628800
 
+# Fonction qui vérifie si un mot est un palindrome
+def est_palindrome(mot):
+    # Initialise la position du début et de la fin du mot
+    debut = 0
+    fin = len(mot) - 1
 
+    # Tant que le début et la fin ne se sont pas rencontrés
+    while debut < fin:
+        # Si les caractères ne sont pas les mêmes
+        if mot[debut] != mot[fin]:
+            return False
+
+        # Incrémente le début et décrémente la fin
+        debut += 1
+        fin -= 1
+
+    # Si le début et la fin se sont rencontrés
+    return True
+
+# Demande à l'utilisateur un mot
+mot = input("Entrez un mot : ")
+
+# Vérifie si le mot est un palindrome
+if est_palindrome(mot):
+    print("Le mot est un palindrome.")
+else:
+    print("Le mot n'est pas un palindrome.")
+
+A FAIRE : TOUT METTRE SOUS FORME DE FONCTION....
