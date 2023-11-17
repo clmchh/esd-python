@@ -106,3 +106,31 @@ for i in range(1, 11):
 9 est impair
 10 est pair
 
+
+# Demande à l'utilisateur un nombre entier N
+n = int(input("Choisissez un nombre entier N : "))
+
+# Initialisation de la la factorielle à 1
+factorielle = 1
+
+# Boucle sur les nombres de 1 à N avec une boucle "for"
+for i in range(1, n + 1):
+    # Multiplie la factorielle par le nombre courant
+    factorielle *= i
+
+# Affiche la factorielle
+print(f"La factorielle de N est {factorielle}")
+
+#Exemple
+
+n=int(input("Choisissez un nombre entier N:"))
+Choisissez un nombre entier N:10
+factorielle=1
+for i in range (1,n+1):
+    factorielle *=i
+
+    
+print(f"La factorielle de N est, {factorielle}")
+La factorielle de N est, 3628800
+
+
