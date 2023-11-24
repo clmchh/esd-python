@@ -227,24 +227,122 @@ print(produit(2,3))
 6
 
 EXERCICE 2 PRODUIT CHAPITRE 5
-def moyenne(a, b, c):
-    """Calcule la moyenne de trois nombres.
+def moyenne (a,b,c):
+    return(a+b+c)/3
 
-    Args:
-        a: Le premier nombre.
-        b: Le deuxième nombre.
-        c: Le troisième nombre.
+print(moyenne(2,3,4))
+3.0
+
+
+EXERCICE CONTACT
+
+# Dictionnaire qui stocke les contacts
+contacts = {}
+
+# Fonction qui ajoute un contact
+def ajouter_contact(nom, numero):
+    contacts[nom] = numero
+
+# Fonction qui supprime un contact
+def supprimer_contact(nom):
+    del contacts[nom]
+
+# Fonction qui recherche un contact
+def rechercher_contact(nom):
+    if nom in contacts:
+        return contacts[nom]
+    else:
+        return None
+
+# Menu principal
+while True:
+    print("Que voulez-vous faire ?")
+    print("1. Ajouter un contact")
+    print("2. Supprimer un contact")
+    print("3. Rechercher un contact")
+    print("4. Quitter")
+
+    choix = input("Votre choix : ")
+
+    # Traitement du choix de l'utilisateur
+    if choix == "1":
+        # Demande du nom du contact
+        nom = input("Nom du contact : ")
+
+        # Demande du numéro de téléphone du contact
+        numero = input("Numéro de téléphone du contact : ")
+
+        # Ajout du contact dans le dictionnaire
+        ajouter_contact(nom, numero)
+
+    elif choix == "2":
+        # Demande du nom du contact à supprimer
+        nom = input("Nom du contact à supprimer : ")
+
+        # Suppression du contact du dictionnaire
+        supprimer_contact(nom)
+
+    elif choix == "3":
+        # Demande du nom du contact à rechercher
+        nom = input("Nom du contact à rechercher : ")
+
+        # Recherche du contact dans le dictionnaire
+        numero = rechercher_contact(nom)
+
+        # Affichage du résultat de la recherche
+        if numero is not None:
+            print("Le numéro de téléphone du contact est :", numero)
+        else:
+            print("Le contact n'est pas trouvé.")
+
+    elif choix == "4":
+        # Quitter le programme
+        break
+
+    else:
+        # Erreur de saisie
+        print("Saisie incorrecte.")
+
+EXERCICE TEMPÉRATURE
+
+def convertir_temperature(temperature, unit_depart, unit_arrivee): #fonction qui convertir la température
+
+    Arguments:
+        temperature: La température à convertir.
+        unit_depart: L'unité de départ ('Celsius' ou 'Fahrenheit').
+        unit_arrivee: L'unité d'arrivée ('Celsius' ou 'Fahrenheit').
 
     Returns:
-        La moyenne des trois nombres.
+        La température convertie.
     """
 
-    return (a + b + c) / 3
+    #Si l'unité de départ est celsius et l'unité d'arrivée est Fahrenheit alors température température Farheneit correpond à température Celsius *1,8+32     
+    if unit_depart == "Celsius" and unit_arrivee == "Fahrenheit": 
+        return temperature * 1.8 + 32
+    elif unit_depart == "Fahrenheit" and unit_arrivee == "Celsius":
+        return (temperature - 32) / 1.8
+    else:
+        raise ValueError("Unité de départ ou d'arrivée invalide.")
+
+print(convertir_temperature(20, "Celsius", "Fahrenheit"))
+68.0
+print(convertir_temperature(50, "Celsius", "Fahrenheit"))
+122.0
 
 
-print (moyenne(2,3,4))
-3.0
-print(moyenne(20,14,22))
-18.666666666666668
+EXERCICE CALCUL IMC 
+def calculer_imc(poids, taille):
+    """Calcule l'Indice de Masse Corporelle (IMC).
 
+    Args:
+        poids: Le poids en kilogrammes.
+        taille: La taille en mètres.
 
+    Returns:
+        L'IMC.
+    """
+
+    return poids / taille ** 2
+    
+    print(calculer_imc(77, 1.76))
+24.857954545454547
