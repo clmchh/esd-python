@@ -137,14 +137,14 @@ La factorielle de N est, 3628800
 
 # Fonction qui vérifie si un mot est un palindrome
 def est_palindrome(mot):
-    # Initialise la position du début et de la fin du mot
+    # Initialisation de la position du début et de la fin du mot
     debut = 0
-    fin = len(mot) - 1
+    fin = len(mot) - 1  # len() renvoie le nombre des éléments (ou la longueur) dans un objet. 
 
     # Tant que le début et la fin ne se sont pas rencontrés
     while debut < fin:
         # Si les caractères ne sont pas les mêmes
-        if mot[debut] != mot[fin]:
+        if mot[debut] != mot[fin]:    # "!=" est utilisé pour vérifier si deux valeurs sont différentes.
             return False
 
         # Incrémente le début et décrémente la fin
