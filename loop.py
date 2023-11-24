@@ -164,3 +164,87 @@ else:
     print("Le mot n'est pas un palindrome.")
 
 A FAIRE : TOUT METTRE SOUS FORME DE FONCTION....
+
+EXERCICE LISTE CHAPITRE 4
+
+maListe=[3, 7, 12, 22, 30]
+maListe.append(8)
+maListe.extend ([4, 9])
+
+print("Liste avant le tri:", maListe)
+Liste avant le tri: [3, 7, 12, 22, 30, 8, 4, 9]
+maListe.sort()
+
+print("Liste triée:", maListe)
+Liste triée: [3, 4, 7, 8, 9, 12, 22, 30]
+
+EXERCICE DICTIONNAIRE CHAPITRE 4
+
+monDictionnaire={
+    "nom": "Clément Chevallier",
+    "âge": 23,
+    "adresse": "9bis Rue Montesquieu, La Rochelle, 17000"
+}
+
+print("Nom :", monDictionnaire["nom"])
+Nom : Clément Chevallier
+print("Âge :", monDictionnaire["âge"])
+Âge : 23
+print("Adresse :", monDictionnaire["adresse"])
+Adresse : 9bis Rue Montesquieu, La Rochelle, 17000
+
+
+EXERCICE 3 UNION INTERSECTION CHAPITRE 4
+monEnsemble={1, 2, 3, 4}
+monEnsmble={5, 6, 7, 8}
+
+print("Ensemble:", monEnsemble)
+Ensemble: {1, 2, 3, 4}
+print("Ensemble2:", monEnsemble2)
+Ensemble2: {8, 5, 6, 7}
+
+union=monEnsemble.union(monEnsemble2)
+print("Union des ensembles":union)
+SyntaxError: invalid syntax
+print("Union des ensembles":,union)
+SyntaxError: invalid syntax
+print("Union des ensemble:",union)
+Union des ensemble: {1, 2, 3, 4, 5, 6, 7, 8}
+
+intersection=monEnsemble.intersection(monEnsemble2)
+print("Intersection des ensembles:",intersection)
+Intersection des ensembles: set()
+
+intersection=monEnsemble.intersection(monEnsemble2)
+print("Intersection des ensembles:",intersection)
+Intersection des ensembles: set()
+
+EXERCICE 1 PRODUIT CHAPITRE 5
+def produit(a,b):
+    return a*b
+
+print(produit(2,3))
+6
+
+EXERCICE 2 PRODUIT CHAPITRE 5
+def moyenne(a, b, c):
+    """Calcule la moyenne de trois nombres.
+
+    Args:
+        a: Le premier nombre.
+        b: Le deuxième nombre.
+        c: Le troisième nombre.
+
+    Returns:
+        La moyenne des trois nombres.
+    """
+
+    return (a + b + c) / 3
+
+
+print (moyenne(2,3,4))
+3.0
+print(moyenne(20,14,22))
+18.666666666666668
+
+
