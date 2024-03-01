@@ -2,7 +2,7 @@
 
 <a href="https://imgbb.com/"><img src="https://w.forfun.com/fetch/62/62f6b7257d24f39bca828f03f4885018.jpeg" alt="Logo" border="0"></a>
 
-## Pourquoi un programme Street Fighter ?
+## Pourquoi un programme Street Fighter ? 
 
 Durant ma jeunesse, j'étais passionné par Street Fighter sur la Playstation. 
 Ce jeu a toujours eu une place spéciale dans mon cœur. 
